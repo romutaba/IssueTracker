@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="jumbo">
+   <form id="form" method="post" >
+		    <fieldset name="email">
+		      <label for="email">Email</label>
+		      <input type="email" name="email" id="email" placeholder="you@domain.com" value="">
+		      <div class="status" id="email_status"></div>
+		    </fieldset>
+
+		   	<fieldset name="password">
+		      <label for="password">Password</label>
+		      <input type="password" name="password" placeholder="password" id="password">
+		      <div class="status" id="password_status"></div>
+		    </fieldset>
+		 
+		    <fieldset>
+		    	<input type="submit" id="submit" value="login">
+			</fieldset>
+			
+	</form>
+  </div>
+{% endblock %}
